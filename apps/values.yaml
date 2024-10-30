@@ -1,0 +1,7 @@
+spec:
+  source:
+    repoURL: https://github.com/FlorentFlament/k8s-dev0-conf.git
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd

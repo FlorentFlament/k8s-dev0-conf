@@ -1,0 +1,6 @@
+apiVersion: v2
+type: application
+name: helloapp
+description: A small application that says hello ..
+version: "0.1.0"
+appVersion: "1.0.0"

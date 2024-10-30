@@ -1,0 +1,11 @@
+contour:
+  contour:
+    ingressStatusAddress: 172.0.0.1 # Update as/if required - Doesn't really matter as long as there is anything
+  envoy:
+    useHostPort:
+      http: true
+      https: true
+      metrics: true
+    service:
+      type: ClusterIP
+      externalTrafficPolicy: {}

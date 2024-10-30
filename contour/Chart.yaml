@@ -1,0 +1,9 @@
+apiVersion: v2
+type: application
+name: contour
+description: Using Bitnami's Contour Helm chart as ingress controller
+version: "1.0.0"
+dependencies:
+- name: contour
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: "19.1.0"
