@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yogishow
+  name: {{ .Values.appName }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicasCount }}
   selector:
     matchLabels:
-      app: yogishow
+      app: {{ .Values.appName }}
   template:
     metadata:
       labels:
-        app: yogishow
+        app: {{ .Values.appName }}
     spec:
       containers:
-      - name: yogishow
-        image: fflament/yogishow:1.1
+      - name: {{ .Values.appName }}
+        image: {{ .Values.containerImage }}
         ports:
         - containerPort: {{ .Values.containerPort }}

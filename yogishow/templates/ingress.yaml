@@ -1,16 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: yogishow
+  name: {{ .Values.appName }}
 spec:
   rules:
-  - host: {{ .Values.hostname }}
+  - host: {{ .Values.ingressHostname }}
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: yogishow
+            name: {{ .Values.appName }}
             port:
               number: 80

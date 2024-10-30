@@ -1,2 +1,5 @@
-hostname: yogishow.w.kynesthesy.org
+appName: yogishow
+ingressHostname: yogishow.w.kynesthesy.org
 containerPort: 80
+containerImage: fflament/yogishow:1.2
+replicasCount: 1
