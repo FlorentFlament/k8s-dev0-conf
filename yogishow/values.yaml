@@ -1,1 +1,2 @@
 hostname: yogishow.w.kynesthesy.org
+containerPort: 80
